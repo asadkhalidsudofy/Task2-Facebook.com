@@ -1,0 +1,65 @@
+.mainHeader, .searchBar, .logo, .nameAndOpt {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mainHeader {
+    background: #3a5998;
+    color: white;
+    justify-content: space-between;
+    height: 3em;
+}
+
+.searchBar, .logo, .nameAndOpt {
+    flex: 1;
+}
+
+.logo, .nameAndOpt {
+    margin: 5px;
+}
+
+.logo h3 {
+    margin-top: 8px;
+}
+
+.searchBar img, .logo img, .nameAndOpt img {
+    width: 16px;
+    height: 16px;
+    margin: 0px 10px;
+    margin-top: 10px;
+}
+
+.searchBar {
+    flex: 3;
+    margin: 8px;    
+    border-bottom: 0.5px solid white;
+    margin-right: 15%;
+}
+
+.searchBar::before {
+    content: url(../res/search-glass.png);
+    margin: 0px 10px;
+    margin-top: 7px;
+}
+
+.searchBar input {
+    width: 70%;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.searchBar input::placeholder {
+    color: white;
+}
+
+.nameAndOpt h4 {
+    margin: 0px 5px;
+    margin-top: 11px;
+}
+
+img[alt="drop-down"] {
+    width: 10px;
+    height: 10px;
+    margin-top: 12px;
+}
